@@ -11,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/workbox-v3.6.3"});
+importScripts("/walletconnect-premint-test/workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "/walletconnect-premint-test/workbox-v3.6.3"});
 
 importScripts(
-  "/precache-manifest.928301339cd225a8a122918dcdaae071.js"
+  "/walletconnect-premint-test/precache-manifest.0b067963ac280e1b25f215d50a26d80b.js"
 );
 
 workbox.clientsClaim();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/index.html", {
+workbox.routing.registerNavigationRoute("/walletconnect-premint-test/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
